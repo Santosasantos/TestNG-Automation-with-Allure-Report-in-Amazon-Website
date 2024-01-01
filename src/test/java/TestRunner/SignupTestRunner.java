@@ -2,17 +2,17 @@ package TestRunner;
 
 import Pages.LoginPage;
 import Pages.SignupPage;
-import Setup.Setup;
+import Setup.CommonSetup;
 import Utils.Utils;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class SignupTestRunner extends Setup {
+public class SignupTestRunner extends CommonSetup {
     @Test(priority = 1,description = "SignIN")
     public void doSignup() throws InterruptedException, IOException, ParseException {
-        driver.get("http://automationpractice.com/");
+        driver.get("https://www.amazon.com/");
         LoginPage loginPage=new LoginPage(driver);
         loginPage.linkLogin.click();
         SignupPage signupPage=new SignupPage(driver);

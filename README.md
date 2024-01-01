@@ -7,9 +7,6 @@ https://www.amazon.com/
 
 ** SignUp
 ** Login
-** Search
-** Cart
-** Checkout
 
 ## Used Technology:
 ** Tool: Selenium Webdriver
